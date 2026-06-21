@@ -1,0 +1,278 @@
+header{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: white; */
+    height: 10vh;
+    /* border-bottom: 2px solid white; */
+}
+.portfolio{
+    color: rgb(184, 184, 184);
+    font-size: 40px;
+    width: 30vw;
+    text-align: center;
+}
+.navigations{
+    width: 45vw;
+    margin-right: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.button{
+    color: white;
+    height: 30px;
+    border: 0;
+    position: relative;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.2s ease-in;
+}
+.button:hover{
+    color: aqua;
+    transform: scale(1.1);
+}
+.home{
+    width: 70px;
+}
+.about{
+    width: 95px;
+}
+.project{
+    width: 90px;
+}
+.experience{
+    width: 90px;
+}
+.active {
+    color: rgb(160, 47, 47);
+}
+.contactme{
+    color: white;
+    width: 90px;
+    height: 30px;
+    border: 0;
+    position: relative;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.2s ease-in;
+}
+.contactme:hover{
+    color: aqua;
+    transform: scale(1.1);
+}
+.contact{
+    margin: 20px;
+    height: 150px;
+    position: fixed;
+    right: 0;
+    bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+}
+.social{
+    width: 60px;
+    height: 60px;
+    background-color: rgb(233, 233, 233);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px white;
+    transition: box-shadow 0.3s ease-in;
+}
+.social:hover{
+    box-shadow: 0px 0px 15px aqua;
+}
+.email{
+    width: 60px;
+    height: 60px;
+    background-color: rgb(233, 233, 233);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px white;
+    transition: box-shadow 0.3s ease-in;
+}
+.email:hover{
+    box-shadow: 0px 0px 15px aqua;
+}
+
+.apps{
+    background-color: rgb(233, 233, 233);
+    position: absolute;
+    width: 50px;
+    border-radius: 50%;
+    transition: transform 0.2s ease-in,box-shadow 0.15s ease-in;
+}
+.apps:hover{
+    box-shadow: 0px 0px 7px aqua;
+}
+.app1{
+    z-index: -1;
+    transition-delay: 0s;
+}
+.app2{
+    z-index: -2;
+    transition-delay: 0.1s;
+}
+.app3{
+    z-index: -3;
+    transition-delay: 0.2s;
+}
+.hireButtons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    width: 35vw;
+    height: 75px;
+}
+.hireMe{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 0;
+    border-radius: 15px;
+    background-color: rgb(160, 47, 47);
+    color: white;
+    font-size: 30px;
+    width: 35%;
+    height: 40px;
+    transition: all 0.2s ease-in;
+}
+.hireMe:hover{
+    box-shadow: 0px 0px 10px aqua;
+}
+.seeWork{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    width: 40%;
+    height: 40px;
+    font-size: 25px;
+    border: 2px solid rgb(160, 47, 47);
+    border-radius: 15px;
+    background-color: transparent;
+    transition: all 0.25s ease-in;
+}
+.seeWork:hover{
+    box-shadow: 0px 0px 10px aqua;
+    background-color: rgb(160, 47, 47);
+}
+
+/* contact form */
+.form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35vw;
+    height: 40vh;
+    color: white;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.29);
+
+    overflow: hidden;
+    transition: all 0.3s ease-in;
+}
+.login{
+    padding: 30px 50px;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+.userNamediv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.userName{
+    color: white;
+    width: 100%;
+    height: 30px;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    border-bottom: 2px solid white;
+    cursor: auto;
+}
+.userNameLabel{
+    position: absolute;
+    font-size: 17px;
+    transition: all 0.2s ease-in;
+}
+.userName:hover + .userNameLabel,
+.userName:focus + .userNameLabel,
+.userName:valid + .userNameLabel{
+    color: aqua;
+    font-size: 12px;
+    margin-bottom: 35px;
+}
+.Emaildiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.Email{
+    width: 100%;
+    color: white;
+    height: 30px;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    border-bottom: 2px solid white;
+    cursor: auto;
+}
+.EmailLabel{
+    font-size: 17px;
+    position: absolute;
+    transition: all 0.2s ease-in;
+}
+.Email:hover + .EmailLabel,
+.Email:focus + .EmailLabel,
+.Email:valid + .EmailLabel{
+    color: aqua;
+    font-size: 12px;
+    margin-bottom: 35px;
+}
+.submitButton{
+    color: white;
+    height: 30px;
+    width: 75px;
+    font-size: 17px;
+    border: 1px solid aqua;
+    background-color: transparent;
+    transition: all 0.2s ease-in;
+    border-radius: 20px;
+}
+.submitButton:hover{
+    background-color: aqua;
+    box-shadow: 0px 0px 5px aqua;
+    filter: brightness(200%);
+}
