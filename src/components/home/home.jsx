@@ -1,7 +1,7 @@
 import profileImage from "../../assets/black buddy.jpg";
 import './home.css'
 
-const home = () => {
+const home = ({ setCurrentPage }) => {
   return (
     <div className="entryPage">
       <div className="nameSection shiftup">
@@ -21,8 +21,13 @@ const home = () => {
         </h2>
 
         <div className="hireButtons">
-          <button className="hireMe">Hire me</button>
-          <button className="seeWork">See my work</button>
+          <button className="hireMe" onClick={() =>
+            window.location.href =
+              "mailto:anubhavmaheshwari066@gmail.com?subject=Hiring Inquiry"
+          }>
+            Hire me
+          </button>
+          <button className="seeWork" onClick={() => setCurrentPage('project')}>See my work</button>
         </div>
       </div>
 

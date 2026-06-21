@@ -78,7 +78,7 @@ header{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    z-index: 2;
+    z-index: 1000;
 }
 .social{
     width: 60px;

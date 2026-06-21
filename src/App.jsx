@@ -12,7 +12,7 @@ const App = () => {
   const [formOpen, setFormOpen] = useState(false);
   
   const pages = {
-    home: (<Home/>),
+    home: (<Home setCurrentPage={setCurrentPage} />),
     about: (<About/>),
     project: (<Project/>),
     experience: (<Experience/>)
@@ -36,7 +36,12 @@ const App = () => {
       {pages[currentPage]}
     </main>
     <Contact onClick={toggleFormOpen}/>
-    {formOpen? <Form /> : ""}
+    {formOpen && (
+      <>
+        <div className="overlay"></div>
+        <Form />
+      </>
+    )}
     </>
   )
 }
